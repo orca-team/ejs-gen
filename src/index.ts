@@ -56,24 +56,28 @@ export default async function transformEjsDir(source: string, target: string, op
         }
 
         // transform targetPath
-        targetPath = ejs.render(targetPath {
-          ...data,
-          camelCase,
-          pascalCase,
-          paramCase,
-          noCase,
-          dotCase,
-          capitalCase,
-          pathCase,
-          snakeCase,
-          headerCase,
-          sentenceCase,
-          constantCase,
-        },{
-          openDelimiter: '[', closeDelimiter: ']'
-        });
+        targetPath = ejs.render(
+          targetPath,
+          {
+            ...data,
+            camelCase,
+            pascalCase,
+            paramCase,
+            noCase,
+            dotCase,
+            capitalCase,
+            pathCase,
+            snakeCase,
+            headerCase,
+            sentenceCase,
+            constantCase,
+          },
+          {
+            openDelimiter: '[',
+            closeDelimiter: ']',
+          },
+        );
 
-        
         if (shouldTransform) {
           fileContent = ejs.render(fileContent, {
             ...data,

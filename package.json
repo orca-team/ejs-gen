@@ -25,7 +25,7 @@
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/NicoKam/ejs-gen"
+    "url": "https://github.com/orca-team/ejs-gen"
   },
   "dependencies": {
     "@types/ejs": "^3.1.1",

@@ -1,7 +1,7 @@
 {
   "name": "@orca-fe/ejs-gen",
   "description": "A file generator base on EJS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./lib/index.js",
   "files": [
     "bin/",

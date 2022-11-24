@@ -23,7 +23,6 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/orca-team/ejs-gen"
@@ -34,13 +33,10 @@
     "chalk": "4",
     "change-case": "^4.1.2",
     "commander": "^9.4.1",
-    "cross-spawn": "^7.0.3",
     "ejs": "^3.1.8",
     "glob": "^8.0.3",
-    "inquirer": "^9.1.4",
     "json5": "^2.2.1",
-    "semver": "^7.3.8",
-    "shelljs": "^0.8.5"
+    "minimist": "^1.2.7"
   },
   "devDependencies": {
     "@types/chokidar": "^2.1.3",
@@ -66,5 +62,6 @@
     }
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {}
 }

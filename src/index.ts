@@ -27,7 +27,7 @@ export type TransformEjsDirOptions = {
   ejsOnly?: string | boolean;
 };
 
-const defaultSuffix = ['.txt', '.js', '.jsx', '.ts', '.tsx', '.json', '.ini', '.ejs'];
+const defaultSuffix = ['.txt', '.js', '.jsx', '.ts', '.tsx', '.less', '.md', '.json', '.ini', '.ejs', '.css', '.scss', '.sass'];
 
 export default async function transformEjsDir(source: string, target: string, options: TransformEjsDirOptions = {}) {
   const { data = {}, suffix = [], ejsOnly } = options;

@@ -92,6 +92,7 @@ export default async function transformEjsDir(source: string, target: string, op
           if (!shouldTransform) {
             // 不需要进行字符串转换的文件，使用 copy 模式
             const targetFullPath = join(targetDir, targetPath);
+            await fs.mkdir(dirname(targetFullPath), { recursive: true });
             await fs.copyFile(fullPath, targetFullPath);
             return;
           }
